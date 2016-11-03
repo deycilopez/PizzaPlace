@@ -52,7 +52,15 @@ function order()
 
 function checkoutOrders()
 {
-  window.alert("Automatically loaded!");
+  var numCheese = getCookie("cheese");
+  var numMeat = getCookie("meatlover");
+  var numVeg = getCookie("veggie");
+  var numCustom = getCookie("custom");
+
+  document.getElementById.("cheeseCount").innerHTML = numCheese + " Cheese pizzas"
+  document.getElementById.("meatCount").innerHTML = numMeat + " Meat Lovers pizzas"
+  document.getElementById.("vegCount").innerHTML = numVeg + " Veggie pizzas"
+  document.getElementById.("customCount").innerHTML = numCustom + " Custom pizzas"
 }
 //courtesy of w3schools, from: http://www.w3schools.com/js/js_cookies.asp
 function setCookie(cname, cvalue, exdays) {
